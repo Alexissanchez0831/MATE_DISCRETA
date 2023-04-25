@@ -21,7 +21,7 @@ var config:
 // Crear el contenedor SVG para el diagrama de Venn
 var svg: var svg: d3.selectany.append("svg")
 {
- .attr("width", 400)
+ .attr("width", 400);
  .attr("height", 400);
 };
 
