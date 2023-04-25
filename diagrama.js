@@ -6,7 +6,8 @@ var sets = [
 ];
 
 // Definir la configuración para el diagrama de Venn
-var config = {
+var config = 
+{
  sets: sets,
  size: 200,
  padding: 0.1,
