@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio de Probabilidades</title>
+</head>
+<body>
+    <h1>Ejercicio de Probabilidades</h1>
+    <p id="resultado"></p>
+
+    <script>
+        // Función para calcular la probabilidad
+        function calcularProbabilidad() {
+            // Obtener los valores de entrada
+            var eventosTotales = parseInt(document.getElementById("eventosTotales").value);
+            var eventosFavorables = parseInt(document.getElementById("eventosFavorables").value);
+
+            // Calcular la probabilidad
+            var probabilidad = eventosFavorables / eventosTotales;
+
+            // Mostrar el resultado
+            document.getElementById("resultado").innerHTML = "La probabilidad es: " + probabilidad.toFixed(2);
+        }
+    </script>
+
+    <label for="eventosTotales">Número de eventos totales:</label>
+    <input type="number" id="eventosTotales" min="1" required><br>
+
+    <label for="eventosFavorables">Número de eventos favorables:</label>
+    <input type="number" id="eventosFavorables" min="0" required><br>
+
+    <button onclick="calcularProbabilidad()">Calcular Probabilidad</button>
+</body>
+</html>
